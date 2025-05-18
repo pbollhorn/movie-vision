@@ -2,23 +2,23 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import Books from "./pages/Books";
-import AddBook from "./pages/AddBook";
-import FindBook from "./pages/FindBook";
+import Home from "./pages/Home";
+import Vision from "./pages/Vision";
+import Endpoints from "./pages/Endpoints";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      { path: "/", element: <Books /> },
+      { path: "/", element: <Home /> },
       {
-        path: "/addbook",
-        element: <AddBook />,
+        path: "/vision",
+        element: <Vision />,
       },
       {
-        path: "/findbook",
-        element: <FindBook />,
+        path: "/endpoints",
+        element: <Endpoints />,
       },
     ],
   },

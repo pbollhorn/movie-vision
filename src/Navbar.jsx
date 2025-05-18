@@ -4,12 +4,12 @@ export default function Navbar() {
   return (
     <nav style={{ padding: "1rem", backgroundColor: "#eee" }}>
       <Link to="/" style={{ marginRight: "1rem" }}>
-        Books
+        Home
       </Link>
-      <Link to="/addbook" style={{ marginRight: "1rem" }}>
-        Add Book
+      <Link to="/vision" style={{ marginRight: "1rem" }}>
+        Vision
       </Link>
-      <Link to="/findbook">Find Book</Link>
+      <Link to="/endpoints">Endpoints</Link>
     </nav>
   );
 }
