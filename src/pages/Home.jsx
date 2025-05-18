@@ -23,9 +23,8 @@ export default function Home() {
       <br />
 
       <p>Link til deployet API:</p>
-      <a href="https://movie.jcoder.dk/api">
-        https://movie.jcoder.dk/api
-      </a>
+      <a href="https://movie.jcoder.dk/api">https://movie.jcoder.dk/api</a>
+      <br />
     </>
   );
 }
