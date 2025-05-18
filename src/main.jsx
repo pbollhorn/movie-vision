@@ -5,23 +5,20 @@ import App from "./App";
 import Books from "./pages/Books";
 import AddBook from "./pages/AddBook";
 import FindBook from "./pages/FindBook";
-import bookFacade from "./bookFacade.js";
-
-const blankBook = { id: "", title: "", info: "" };
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App bookFacade={bookFacade} />,
+    element: <App />,
     children: [
-      { path: "/", element: <Books bookFacade={bookFacade} /> },
+      { path: "/", element: <Books /> },
       {
         path: "/addbook",
-        element: <AddBook bookFacade={bookFacade} blankBook={blankBook} />,
+        element: <AddBook />,
       },
       {
         path: "/findbook",
-        element: <FindBook bookFacade={bookFacade} blankBook={blankBook} />,
+        element: <FindBook />,
       },
     ],
   },
