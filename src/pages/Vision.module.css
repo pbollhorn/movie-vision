@@ -1,0 +1,8 @@
+.mockups {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mockups img {
+  padding: 3px;
+}
